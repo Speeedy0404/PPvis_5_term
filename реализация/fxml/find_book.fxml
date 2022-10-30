@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="932.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.public_library.FindBookController">
+    <children>
+        <AnchorPane layoutY="65.0" prefHeight="734.0" prefWidth="932.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TableView fx:id="search_one" layoutX="11.0" layoutY="33.0" prefHeight="138.0" prefWidth="912.0" AnchorPane.bottomAnchor="556.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+                    <columns>
+                        <TableColumn fx:id="one_title_table" prefWidth="228.0" text="Название" />
+                        <TableColumn fx:id="one_author_table" minWidth="0.0" prefWidth="219.0" text="Автор" />
+                        <TableColumn fx:id="one_genre_table" prefWidth="133.0" text="Жанр" />
+                  <TableColumn fx:id="one_age_table" prefWidth="118.0" text="Год" />
+                  <TableColumn fx:id="one_pages_table" prefWidth="110.0" text="Страниц" />
+                  <TableColumn fx:id="one_age_restriction_table" prefWidth="103.0" text="Возраст. Огран." />
+                    </columns>
+                </TableView>
+                <Button fx:id="find_one" layoutX="11.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Найти" textFill="WHITE" />
+                <Button fx:id="find_two" layoutX="11.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Найти" textFill="WHITE" />
+                <Button fx:id="find_three" layoutX="11.0" layoutY="370.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Найти" textFill="WHITE" />
+            <TextField fx:id="one_title_field" layoutX="68.0" layoutY="10.0" promptText="Название" />
+            <TextField fx:id="two_genre_field" layoutX="68.0" layoutY="190.0" promptText="Жанр" />
+            <TextField fx:id="three_author_field" layoutX="68.0" layoutY="370.0" promptText="Автор" />
+            <Button fx:id="find_four" layoutX="11.0" layoutY="548.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Найти" textFill="WHITE" />
+            <TextField fx:id="four_age_field" layoutX="68.0" layoutY="548.0" promptText="По году выхода" />
+            <TableView fx:id="search_two" layoutX="14.0" layoutY="222.0" prefHeight="138.0" prefWidth="912.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <columns>
+                  <TableColumn fx:id="two_title_table" prefWidth="228.0" text="Название" />
+                  <TableColumn fx:id="two_author_table" minWidth="0.0" prefWidth="219.0" text="Автор" />
+                  <TableColumn fx:id="two_genre_table" prefWidth="133.0" text="Жанр" />
+                  <TableColumn fx:id="two_age_table" prefWidth="118.0" text="Год" />
+                  <TableColumn fx:id="two_pages_table" prefWidth="110.0" text="Страниц" />
+                  <TableColumn fx:id="two_age_restriction_table" prefWidth="103.0" text="Возраст. Огран." />
+               </columns>
+            </TableView>
+            <TableView fx:id="search_three" layoutX="14.0" layoutY="402.0" prefHeight="138.0" prefWidth="912.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <columns>
+                  <TableColumn fx:id="three_title_table" prefWidth="228.0" text="Название" />
+                  <TableColumn fx:id="three_author_table" minWidth="0.0" prefWidth="219.0" text="Автор" />
+                  <TableColumn fx:id="three_genre_table" prefWidth="133.0" text="Жанр" />
+                  <TableColumn fx:id="three_age_table" prefWidth="118.0" text="Год" />
+                  <TableColumn fx:id="three_pages_table" prefWidth="110.0" text="Страниц" />
+                  <TableColumn fx:id="three_age_restriction_table" prefWidth="103.0" text="Возраст. Огран." />
+               </columns>
+            </TableView>
+            <TableView fx:id="search_four" layoutX="10.0" layoutY="582.0" prefHeight="138.0" prefWidth="912.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <columns>
+                  <TableColumn fx:id="four_title_table" prefWidth="228.0" text="Название" />
+                  <TableColumn fx:id="four_author_table" minWidth="0.0" prefWidth="219.0" text="Автор" />
+                  <TableColumn fx:id="four_genre_table" prefWidth="133.0" text="Жанр" />
+                  <TableColumn fx:id="four_age_table" prefWidth="118.0" text="Год" />
+                  <TableColumn fx:id="four_pages_table" prefWidth="110.0" text="Страниц" />
+                  <TableColumn fx:id="four_age_restriction_table" prefWidth="103.0" text="Возраст. Огран." />
+               </columns>
+            </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="370.0" layoutY="16.0" prefHeight="41.0" prefWidth="193.0" text="Поиск книги" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="menu_page" layoutX="8.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Меню" textFill="WHITE" />
+    </children>
+</AnchorPane>

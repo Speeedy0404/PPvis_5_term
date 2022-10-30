@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="440.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.public_library.AddBookController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="75.0" prefHeight="425.0" prefWidth="440.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="75.0">
+            <children>
+                <Button fx:id="add_book" layoutX="156.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: F39C63;" text="Добавить" textFill="WHITE" />
+                <TextField fx:id="title_field" layoutX="150.0" layoutY="80.0" promptText="Название" />
+                <TextField fx:id="author_field" layoutX="150.0" layoutY="110.0" promptText="Автор" />
+                <TextField fx:id="genre_field" layoutX="151.0" layoutY="140.0" promptText="Жанр" />
+                <TextField fx:id="age_field" layoutX="150.0" layoutY="170.0" promptText="Год" />
+                <TextField fx:id="pages_field" layoutX="150.0" layoutY="200.0" promptText="Страниц" />
+                <TextField fx:id="age_restriction_field" layoutX="150.0" layoutY="230.0" promptText="Возраст. Огран." />
+                <Button fx:id="editing_books_page" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="К списку книг" textFill="#fffbfb" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="92.0" layoutY="14.0" text="Добавление книги" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

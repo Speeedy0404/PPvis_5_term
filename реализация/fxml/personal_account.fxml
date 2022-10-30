@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="440.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.public_library.PersonalAccountController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="75.0" prefHeight="425.0" prefWidth="440.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="75.0">
+            <children>
+                <Button fx:id="apply" layoutX="156.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: F39C63;" text="Применить" textFill="WHITE" />
+                <TextField fx:id="surname_field" layoutX="150.0" layoutY="80.0" promptText="Фамилия" />
+                <TextField fx:id="name_field" layoutX="150.0" layoutY="110.0" promptText="Имя" />
+                <TextField fx:id="middle_name_field" layoutX="151.0" layoutY="140.0" promptText="Отчество" />
+                <TextField fx:id="phone_field" layoutX="150.0" layoutY="170.0" promptText="Номер телефона" />
+                <TextField fx:id="email_field" layoutX="150.0" layoutY="200.0" promptText="Email" />
+                <TextField fx:id="password_field" layoutX="150.0" layoutY="230.0" promptText="Пароль" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="94.0" layoutY="21.0" text="Личный кабинет" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="36.0" />
+            </font>
+        </Label>
+          <Button fx:id="menu_page" layoutX="13.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: F39C63;" text="Меню" textFill="WHITE" />
+    </children>
+</AnchorPane>
