@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<row>
+  <id>1</id>
+  <surname>Семченков</surname>
+  <first_name>Никита</first_name>
+  <middle_name>Андреевич</middle_name>
+  <phone>375299851086</phone>
+  <mail>nik_semchenkov@mail.ru</mail>
+  <password>987654321</password>
+  <administrator>true</administrator>
+</row>
+<row>
+  <id>8</id>
+  <surname>Семченков</surname>
+  <first_name>Андрей</first_name>
+  <middle_name>Андреевич</middle_name>
+  <phone>375296999682</phone>
+  <mail>andre_sem@mail.ru</mail>
+  <password>123456789</password>
+  <administrator>false</administrator>
+</row>
+</data>

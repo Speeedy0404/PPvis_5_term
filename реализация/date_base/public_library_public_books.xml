@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<row>
+  <id>3</id>
+  <title>Убийца акаме</title>
+  <author>Такахиро</author>
+  <genre>Фэнтези</genre>
+  <year>2013</year>
+  <pages>3446</pages>
+  <age_restriction>16</age_restriction>
+</row>
+<row>
+  <id>4</id>
+  <title>Тёмная Башня</title>
+  <author>Стивен Кинг</author>
+  <genre>Фэнтези</genre>
+  <year>2017</year>
+  <pages>1006</pages>
+  <age_restriction>16</age_restriction>
+</row>
+<row>
+  <id>2</id>
+  <title>Пятьдесят дней до моего самоубийства</title>
+  <author>Стейс Крамер</author>
+  <genre>Книги для подростков</genre>
+  <year>2013</year>
+  <pages>504</pages>
+  <age_restriction>14</age_restriction>
+</row>
+</data>
