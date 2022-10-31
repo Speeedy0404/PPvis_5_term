@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 <row>
-  <id>3</id>
-  <title>Убийца акаме</title>
-  <author>Такахиро</author>
-  <genre>Фэнтези</genre>
-  <year>2013</year>
-  <pages>3446</pages>
-  <age_restriction>16</age_restriction>
-</row>
-<row>
   <id>4</id>
   <title>Тёмная Башня</title>
   <author>Стивен Кинг</author>
@@ -26,5 +17,23 @@
   <year>2013</year>
   <pages>504</pages>
   <age_restriction>14</age_restriction>
+</row>
+<row>
+  <id>6</id>
+  <title>Убийца акаме</title>
+  <author>Такахиро</author>
+  <genre>Фэнтези</genre>
+  <year>2013</year>
+  <pages>3446</pages>
+  <age_restriction>16</age_restriction>
+</row>
+<row>
+  <id>7</id>
+  <title>Мастер и Маргарита</title>
+  <author>Михаил Булгаков</author>
+  <genre>Любовный роман</genre>
+  <year>1966</year>
+  <pages>571</pages>
+  <age_restriction>16</age_restriction>
 </row>
 </data>

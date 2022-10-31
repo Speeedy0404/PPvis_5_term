@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 <row>
-  <id>1</id>
-  <surname>Семченков</surname>
-  <first_name>Никита</first_name>
-  <middle_name>Андреевич</middle_name>
-  <phone>375299851086</phone>
-  <mail>nik_semchenkov@mail.ru</mail>
-  <password>987654321</password>
-  <administrator>true</administrator>
+  <id>10</id>
+  <surname>Бусова</surname>
+  <first_name>Юлия</first_name>
+  <middle_name>Юрьевна</middle_name>
+  <phone>375296366003</phone>
+  <mail>julia@mail.ru</mail>
+  <password>37043704</password>
+  <administrator>false</administrator>
 </row>
 <row>
   <id>8</id>
@@ -17,7 +17,17 @@
   <middle_name>Андреевич</middle_name>
   <phone>375296999682</phone>
   <mail>andre_sem@mail.ru</mail>
-  <password>123456789</password>
+  <password>987654321</password>
   <administrator>false</administrator>
+</row>
+<row>
+  <id>1</id>
+  <surname>Семченков</surname>
+  <first_name>Никита</first_name>
+  <middle_name>Андреевич</middle_name>
+  <phone>375299851086</phone>
+  <mail>nik@mail.ru</mail>
+  <password>1239</password>
+  <administrator>true</administrator>
 </row>
 </data>

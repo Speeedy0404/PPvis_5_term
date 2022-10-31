@@ -47,23 +47,26 @@ public class IssuedBooksDao extends Configs {
     }
 
     public void addIssued() {
-        if (checkTheAvailabilityOfTheIssueByTheUserIdAndTheBook(UserDao.getInstance().getIdByEmail(ViewingAllUsersController.user_book_issuance.getEmail()), BooksDao.getInstance().gotIdByTitleAndAuthor())) {
-            String insert = "INSERT INTO " + Const.ISSUED_BOOKS_TABLE + "("
-                    + Const.ISSUED_BOOKS_USER_ID + "," + Const.ISSUED_BOOKS_BOOKS_ID + "," +
-                    Const.ISSUED_BOOKS_RETURN_DATE + ")" + "VALUES(?,?,?)";
+        int id_book = BooksDao.getInstance().gotIdByTitleAndAuthor();
+        if (id_book != 0) {
+            if (checkTheAvailabilityOfTheIssueByTheUserIdAndTheBook(UserDao.getInstance().getIdByEmail(ViewingAllUsersController.user_book_issuance.getEmail()), BooksDao.getInstance().gotIdByTitleAndAuthor())) {
+                String insert = "INSERT INTO " + Const.ISSUED_BOOKS_TABLE + "("
+                        + Const.ISSUED_BOOKS_USER_ID + "," + Const.ISSUED_BOOKS_BOOKS_ID + "," +
+                        Const.ISSUED_BOOKS_RETURN_DATE + ")" + "VALUES(?,?,?)";
 
 
-            try (Connection connection = DriverManager.getConnection(connectionString, dbUser, dbPass);
-                 PreparedStatement statement = connection.prepareStatement(insert)) {
+                try (Connection connection = DriverManager.getConnection(connectionString, dbUser, dbPass);
+                     PreparedStatement statement = connection.prepareStatement(insert)) {
 
-                statement.setInt(1, UserDao.getInstance().getIdByEmail(ViewingAllUsersController.user_book_issuance.getEmail()));
-                statement.setInt(2, BooksDao.getInstance().gotIdByTitleAndAuthor());
-                statement.setDate(3, BookIssuanceController.issuedBooks.getReturn_date());
+                    statement.setInt(1, UserDao.getInstance().getIdByEmail(ViewingAllUsersController.user_book_issuance.getEmail()));
+                    statement.setInt(2, BooksDao.getInstance().gotIdByTitleAndAuthor());
+                    statement.setDate(3, BookIssuanceController.issuedBooks.getReturn_date());
 
-                statement.executeUpdate();
+                    statement.executeUpdate();
 
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
+                } catch (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
             }
         }
     }
@@ -118,7 +121,7 @@ public class IssuedBooksDao extends Configs {
 
     public void deleteIssue() {
         int id_user = UserDao.getInstance().getIdByEmail(GivenBooksController.delete_issued.getEmail());
-        int id_book = BooksDao.getInstance().gotIdByTitleAndAuthor(GivenBooksController.delete_issued.getTitle(),GivenBooksController.delete_issued.getAuthor());
+        int id_book = BooksDao.getInstance().gotIdByTitleAndAuthor(GivenBooksController.delete_issued.getTitle(), GivenBooksController.delete_issued.getAuthor());
         String del = "DELETE FROM  " + Const.ISSUED_BOOKS_TABLE
                 + " WHERE " + Const.ISSUED_BOOKS_USER_ID + "=" + id_user +
                 " AND " + Const.ISSUED_BOOKS_BOOKS_ID + "=" + id_book;

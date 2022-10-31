@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 <row>
+  <user_id>10</user_id>
+  <books_id>7</books_id>
+  <return_date>2022-11-17</return_date>
+</row>
+<row>
   <user_id>8</user_id>
-  <books_id>3</books_id>
-  <return_date>2022-10-31</return_date>
+  <books_id>4</books_id>
+  <return_date>2022-11-30</return_date>
 </row>
 </data>
